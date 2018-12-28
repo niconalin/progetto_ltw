@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTMeaL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link href="css/commons.css" rel="stylesheet">
+    <link href="css/risultati.css" rel="stylesheet">
+</head>
+
+<body class="bg bg_body_risultati">
+
+    <!--====================================================================================================================-->
+
+    <!-- MENU' -->
+    <nav class="navbar menu" id="menu">
+        <a class="navbar-brand marchio">HTMeaL</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="piatto.html">Cerca Per Piatto</a>
+        <a class="nav-link" href="ingredienti.html">Cerca Per Ingredienti</a>
+        <a class="nav-link" href="chi_siamo.html">Chi Siamo</a>
+    </nav>
+
+    <!--====================================================================================================================-->
+    
+    <!-- TIPO DI RICERCA -->
+    <div class="container text-center" id="ricerca-per-div">
+        <h1 id="ricerca-per"></h1>
+    </div>
+
+    <!-- PARAMETRI RICERCA -->
+    <div class="container text-center query" id="query">
+        <div id="searched"></div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!--FILTRI-->
+    <div id="accordion" class="col-3">
+
+        <div id="num_risultati"></div>
+
+        <!--HEADER-->
+        <div class="card" id="filtri">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <button class="btn collapsed btn-filtri filtri_text" data-toggle="collapse" data-target="#sotto_filtri"
+                        aria-expanded="false" aria-controls="sotto_filtri">
+                        Che cosa cerchi?
+                    </button>
+                </h5>
+            </div>
+            <!--SOTTOFILTRI-->
+            <div id="sotto_filtri" class="collapse" aria-labelledby="filtri" data-parent="#accordion">
+                <div class="card-body">
+                    <!--TIPO PIATTO-->
+                    <div class="card" id="tipo_piatto">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed btn-filtri filtri_text" data-toggle="collapse" data-target="#sotto_tp"
+                                    aria-expanded="false" aria-controls="sotto_tp">
+                                    Tipo piatto
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="sotto_tp" class="collapse" aria-labelledby="tipo_piatto" data-parent="#sotto_filtri">
+                        <div class="card-body">
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="tutti" checked=true>
+                                <label class="form-check-label" for="tutti">Tutti</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="antipasto">
+                                <label class="form-check-label" for="antipasto">Antipasto</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="primo">
+                                <label class="form-check-label" for="primo">Primo</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="salsa">
+                                <label class="form-check-label" for="salsa">Salsa</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="carne">
+                                <label class="form-check-label" for="carne">Carne</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="pesce">
+                                <label class="form-check-label" for="pesce">Pesce</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="pollame">
+                                <label class="form-check-label" for="pollame">Pollame</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="contorno">
+                                <label class="form-check-label" for="contorno">Contorno</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="dessert">
+                                <label class="form-check-label" for="dessert">Dessert</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="tp" type="radio" value="" id="bevande">
+                                <label class="form-check-label" for="bevande">Bevande</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--NUMERO PERSONE-->
+                    <div class="card" id="numero_persone">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed btn-filtri filtri_text" data-toggle="collapse" data-target="#sotto_np"
+                                    aria-expanded="false" aria-controls="sotto_np">
+                                    Numero persone
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="sotto_np" class="collapse" aria-labelledby="numero_persone" data-parent="#sotto_filtri">
+                        <div class="card-body">
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="np" type="radio" value="" id="indifferente">
+                                <label class="form-check-label" for="indifferente">Indifferente</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="np" type="radio" value="" id="1">
+                                <label class="form-check-label" for="1">1</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="np" type="radio" value="" id="2">
+                                <label class="form-check-label" for="2">2</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="np" type="radio" value="" id="4">
+                                <label class="form-check-label" for="4">4</label>
+                            </div>
+                            <div class="form-check sotto_filtri_text">
+                                <input class="form-check-input" name="np" type="radio" value="" id="10">
+                                <label class="form-check-label" for="10+">10+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--INIZIALI-->
+                    <div class="card" id="iniziali">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <button class="btn collapsed btn-filtri filtri_text" data-toggle="collapse" data-target="#sotto_i"
+                                    aria-expanded="false" aria-controls="sotto_i">
+                                    Iniziali
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="sotto_i" class="collapse" aria-labelledby="iniziali" data-parent="#sotto_filtri">
+                        <div class="card-body">
+                            <select id="lettere">
+                                <option value="none" selected>-- lettera --</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="I">I</option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="N">N</option>
+                                <option value="O">O</option>
+                                <option value="P">P</option>
+                                <option value="Q">Q</option>
+                                <option value="R">R</option>
+                                <option value="S">S</option>
+                                <option value="T">T</option>
+                                <option value="U">U</option>
+                                <option value="V">V</option>
+                                <option value="Z">Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- RICETTE TROVATE -->
+    <div id="ricette" class="col-8 ricette"></div>
+
+    <!--====================================================================================================================-->
+
+    <!-- FOOTER -->
+    <div class="end">
+        <div class="col-1" id="scroll_top">Torna su</div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- Bootstrap core JavaScript, JQuery and our scripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/commons.js"></script>
+    <script type="text/javascript" language="javascript" src="js/risultati.js"></script>
+</body>
+
+</html>

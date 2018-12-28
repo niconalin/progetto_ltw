@@ -1,0 +1,84 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTMeaL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link href="css/commons.css" rel="stylesheet">
+    <link href="css/ingredienti.css" rel="stylesheet">
+</head>
+
+<body class="bg bg_body_ingredienti">
+
+    <!--====================================================================================================================-->
+
+    <!-- MENU' -->
+    <nav class="navbar menu" id="menu">
+        <a class="navbar-brand marchio">HTMeaL</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="piatto.html">Cerca Per Piatto</a>
+        <a class="nav-link active" href="ingredienti.html">Cerca Per Ingredienti</a>
+        <a class="nav-link" href="chi_siamo.html">Chi Siamo</a>
+    </nav>
+
+    <!--====================================================================================================================-->
+
+    <!-- DESCRIZIONE SERVIZIO -->
+    <div class="container text-center" id="descrizione_div">
+        <div class="row">
+            <div class="col sotto_desc sotto_desc_ingredienti">
+                <h3 id="titolo_descrizione">APRI IL FRIGORIFERO...</h3>
+                <p>Cosa hai voglia di mangiare? Che ingredienti hai? Scegli quelli che ti fanno più gola!</p>
+            </div>
+            <div class="col sotto_desc sotto_desc_ingredienti">
+                <h3 id="titolo_descrizione">...INSERISCI GLI INGREDIENTI...</h3>
+                <p>Scrivi quelli che hai scelto nella barra di ricerca e premi invio!</p>
+            </div>
+            <div class="col sotto_desc sotto_desc_ingredienti">
+                <h3 id="titolo_descrizione">...E DIVERTITI A CUCINARE!!</h3>
+                <p>Ora individua, tra le ricette proposte, quella
+                    per te più sfiziosa: si comincia a cucinare!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- ZONA DI RICERCA -->
+    <div class="container">
+        <div class="form-group text-center">
+            <label class="search" for="searchBarIngredienti">Cerca:</label>
+            <input type="text" class="form-control searchBar" id="searchBarIngredienti" placeholder="Inserisci gli ingredienti uno per volta e premi Invio..."
+                onkeydown="controlloSearchBarIngredienti(event)">
+            <button id="searchIngredienti" class="btn col-3 go go_ingredienti">VAI!</button>
+        </div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- LISTA INGREDIENTI CERCATI -->
+    <div class="col-6 offset-3" id="lista_scelte_div"></div>
+
+    <!--====================================================================================================================-->
+
+    <!-- Bootstrap core JavaScript, JQuery and our scripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/commons.js"></script>
+    <script type="text/javascript" language="javascript" src="js/ingredienti.js"></script>
+</body>
+
+</html>

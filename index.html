@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTMeaL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link href="css/commons.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body class="bg bg_body_index">
+
+    <!--====================================================================================================================-->
+
+    <!-- MENU' -->
+    <nav class="navbar menu" id="menu">
+        <a class="navbar-brand marchio">HTMeaL</a>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="piatto.html">Cerca Per Piatto</a>
+        <a class="nav-link" href="ingredienti.html">Cerca Per Ingredienti</a>
+        <a class="nav-link" href="chi_siamo.html">Chi Siamo</a>
+    </nav>
+
+    <!--====================================================================================================================-->
+
+    <!-- SPAZIO VISUALIZZAZIONE RICETTA RANDOM (HIDDEN) -->
+    <div id="close">x</div>
+    <div class="col-8 offset-2" id="ricetta-random-nome"></div>
+    <div class="col-8 offset-2" id="ricetta-random"></div>
+
+    <!--====================================================================================================================-->
+
+    <!-- COVER -->
+    <div class="col-6 offset-3 text-center" id="cover">
+        <h1 class="title">Che cosa cuciniamo oggi!?</h1>
+        <p>Hai fame ma non sai cosa cucinare? Hai fatto la spesa ma non trovi l'ispirazione?
+            Nessun problema, ti aiutiamo noi!
+            Scegli il piatto che vorresti mangiare o gli ingredienti che vorresti usare:
+            al resto ci pensa "HTMeaL!"!</p>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- 6 RICETTE RANDOM (IMMAGINI PREFISSATE CAUSA MANCANZA DEL DATABASE) -->
+    <div class="container" id="random">
+        <div class="row">
+            <div class="col classic" id="r1">
+                <img src="images/carbonara.jpg" class="classic_img" id="i1">
+                <h1 class="classic_text" id="h1"></h1>
+                <p class="classic_text" id="p1"></p>
+            </div>
+            <div class="col classic" id="r2">
+                <img src="images/tiramisu.jpg" class="classic_img" id="i2">
+                <h1 class="classic_text" id="h2"></h1>
+                <p class="classic_text" id="p2"></p>
+            </div>
+            <div class="col classic" id="r3">
+                <img src="images/lasagna.jpg" class="classic_img" id="i3">
+                <h1 class="classic_text" id="h3"></h1>
+                <p class="classic_text" id="p3"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col classic" id="r4">
+                <img src="images/pizza.jpg" class="classic_img" id="i4">
+                <h1 class="classic_text" id="h4"></h1>
+                <p class="classic_text" id="p4"></p>
+            </div>
+            <div class="col classic" id="r5">
+                <img src="images/polpette.jpeg" class="classic_img" id="i5">
+                <h1 class="classic_text" id="h5"></h1>
+                <p class="classic_text" id="p5"></p>
+            </div>
+            <div class="col classic" id="r6">
+                <img src="images/risotto.jpg" class="classic_img" id="i6">
+                <h1 class="classic_text" id="h6"></h1>
+                <p class="classic_text" id="p6"></p>
+            </div>
+        </div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- Bootstrap core JavaScript, JQuery and our scripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/commons.js"></script>
+    <script type="text/javascript" language="javascript" src="js/index.js"></script>
+</body>
+
+</html>

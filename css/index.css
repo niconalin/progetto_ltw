@@ -1,0 +1,110 @@
+
+/*==========INDEX===========*/
+
+.bg_body_index {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/index.jpg);
+}
+
+#cover {
+    margin-top: 7rem;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#random {
+    margin-bottom: 4rem;
+}
+
+.classic {
+    height: 30rem;
+    width: 20rem;
+    margin: .5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-right: .25rem solid rgb(0, 0, 0);
+    border-bottom: .25rem solid rgb(0, 0, 0);
+    border-radius: .5rem;
+}
+
+.classic:hover {
+    box-shadow: 0 .2rem .5rem black;
+    transform: translateY(.1rem);
+}
+
+.classic:active {
+    box-shadow: 0 .2rem .5rem black;
+    border-right: .1rem solid rgb(0, 0, 0);
+    border-bottom: .1rem solid rgb(0, 0, 0);
+    transform: translateY(.2rem);
+}
+
+.classic_img {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    height: 15rem;
+    width: 20rem;
+    border-bottom: .25rem solid black;
+    border-right: .25rem solid black;
+    border-radius: .5rem;
+}
+
+.classic_text {
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#close {
+    position: absolute;
+    right: 1rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    width: 2rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-right: .15rem solid rgb(0, 0, 0);
+    border-bottom: .15rem solid rgb(0, 0, 0);
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+#close:hover {
+    box-shadow: 0 .2rem .5rem black;
+    transform: translateY(.1rem);
+}
+
+#close:active {
+    box-shadow: 0 .2rem .5rem black;
+    border-right: .09rem solid rgb(0, 0, 0);
+    border-bottom: .09rem solid rgb(0, 0, 0);
+    transform: translateY(.2rem);
+}
+
+#ricetta-random-nome {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#ricetta-random {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: .2rem solid black;
+    border-radius: .5rem;
+    box-shadow: 1rem;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+/*================================================================================================================================*/

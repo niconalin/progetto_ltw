@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTMeaL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link href="css/commons.css" rel="stylesheet">
+    <link href="css/chisiamo.css" rel="stylesheet">
+</head>
+
+<body class="bg bg_body_chi_siamo">
+
+    <!--====================================================================================================================-->
+    
+    <!-- MENU' -->
+    <nav class="navbar menu" id="menu">
+        <a class="navbar-brand marchio">HTMeaL</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="piatto.html">Cerca Per Piatto</a>
+        <a class="nav-link" href="ingredienti.html">Cerca Per Ingredienti</a>
+        <a class="nav-link active" href="chi_siamo.html">Chi Siamo</a>
+    </nav>
+
+    <!--====================================================================================================================-->
+    
+    <!-- SINOSSI -->
+    <div class="container" id="info">
+        HTMeaL è un sito di ricette che vuole essere alla portata di tutti, proponendo idee per tutte le tasche, i
+        gusti e le abilità.<br><br>
+        Si pone sul panorama di internet con un format innovativo, che ti consente di assemblare quello che già hai in
+        ricette strepitose, ma non rinuncia all’immancabile possibilità di cercare uno specifico piatto e guidarti
+        nella sua preparazione.<br><br>
+
+        Le ricette sono in continuo aggiornamento, per permetterci di essere sempre più vicini alle tue esigenze!
+        Ricordati, inoltre, che puoi contattarci in qualsiasi momento, per mandarci anche le tue idee, che verranno
+        aggiunte al nostro database, che già vanta migliaia di preparazioni.<br><br>
+
+        Non ti resta che iniziare a cucinare e condividere con noi i gustosi risultati!<br><br>
+
+
+        HTMeaL è un sito interamente ideato e realizzato da Nicolò Nalin e Marcello Napoletano<br><br>
+
+
+        CONTATTI<br>
+        Per contattarci info@HTMeaL.it
+    </div>
+
+    <!--====================================================================================================================-->
+    
+    <!-- FORM INVIO RICETTA -->
+    <div class="container" id="invio_ricette">
+        <div id="form_ricetta" name="form_ricetta" class="form-group">
+            <h1 style="text-align: center;">Condividi con noi la tua ricetta!</h1>
+
+            <label for="nome">Nome Ricetta:</label>
+            <input id="nome" type="text" class="form-control" placeholder="Inserisci il nome della Ricetta...">
+
+            <label for="tipo_piatto">Tipo Piatto:</label>
+            <div>
+                <select id="tipo_piatto">
+                    <option value="none" selected>-- tipo piatto --</option>
+                    <option value="Antipasto">Antipasto</option>
+                    <option value="Primo">Primo</option>
+                    <option value="Salsa">Salsa</option>
+                    <option value="Carne">Carne</option>
+                    <option value="Pesce">Pesce</option>
+                    <option value="Pollame">Pollame</option>
+                    <option value="Contorno">Contorno</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Bevande">Bevande</option>
+                </select>
+            </div>
+
+            <label for="ing_principale">Ingrediente Principale:</label>
+            <input id="ing_principale" type="text" class="form-control" placeholder="Inserisci l'ingrediente principale...">
+
+            <label for="persone">Persone:</label>
+            <input id="persone" type="text" class="form-control" placeholder="Inserisci il numero di persone...">
+
+            <label for="note">Note:</label>
+            <input id="note" type="text" class="form-control" placeholder="Inserisci eventuali note...">
+
+            <div id="ingredienti">
+                <div>
+                    <label class="label_ingrediente">Ingrediente:</label>
+                    <input type="text" class="ingrediente form-control" placeholder="Inserisci ingrediente...">
+                    <label class="label_quantita">Quantità:</label>
+                    <input type="text" class="quantita form-control" placeholder="Inserisci quantità...">
+                    <div class="add" onclick="addPressed(this)">+</div>
+                </div>
+            </div>
+
+            <label for="preparazione">Preparazione:</label>
+            <textarea id="preparazione" rows="15" class="form-control" placeholder="Inserisci la preparazione..."></textarea>
+
+            <div id="btn_container"><button id="invia" onclick="return validaForm()">Condividi!</button></div>
+        </div>
+
+        <!-- RISULTATI INVIO (HIDDEN) -->
+        <div id="invio_result"></div>
+        <button id="back" class="button">Torna indietro</button>
+    </div>
+
+    <!-- Bootstrap core JavaScript, JQuery and our scripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/commons.js"></script>
+    <script type="text/javascript" language="javascript" src="js/chisiamo.js"></script>
+</body>
+
+</html>

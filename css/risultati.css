@@ -1,0 +1,135 @@
+
+/*========RISULTATI=========*/
+
+.bg_body_risultati {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/risultati.jpg);
+    background-repeat: no-repeat;
+}
+
+#ricerca-per-div {
+    margin-top: 6rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.query {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#searched {
+    padding-top: .7rem; 
+    padding-bottom: .7rem; 
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+}
+
+#accordion {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    float: left;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+}
+
+#num_risultati {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#filtri {
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: .5rem;
+    margin: .5rem;
+}
+
+.btn-filtri {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.btn-filtri:focus {
+    box-shadow: none;
+}
+
+.btn-filtri:hover {
+    box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 0.25);
+}
+
+.filtri_text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.sotto_filtri_text {
+    padding-left: 3rem;
+    margin-left: 1.5rem;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+#lettere {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+#ricette {
+    margin-top: 2rem;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .5rem;
+    margin-bottom: 4rem;
+}
+
+.ricette {
+    margin-left: 2rem;
+    color: white;
+}
+
+#ricerca_fallita {
+    height: 28rem;
+    padding: 8rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#scroll_top {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .25rem;
+
+}
+
+/*================================================================================================================================*/

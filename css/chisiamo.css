@@ -1,0 +1,91 @@
+/*========CHI SIAMO=========*/
+
+.bg_body_chi_siamo {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/chisiamo.jpg);
+    background-repeat: no-repeat;
+}
+
+#info {
+    margin-top: 6rem;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: .5rem;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#invio_ricette {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: .5rem;
+    padding: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+#ingredienti {
+    margin-top: 2rem;
+}
+
+.label_ingrediente {
+    float: left;
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+
+.ingrediente {
+    float: left;
+    width: 20rem;
+    margin-right: 3rem;
+}
+
+.label_quantita {
+    float: left;
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+
+.quantita{
+    float: left;
+    width: 20rem;
+    margin-right: 5rem;
+}
+
+.add {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.clear{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#invia {
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#btn_container {
+    text-align: center;
+}
+
+#back {
+    margin-top: 0.6rem;
+}
+
+/*================================================================================================================================*/

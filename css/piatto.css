@@ -1,0 +1,32 @@
+
+/*==========PIATTO==========*/
+
+.bg_body_piatto {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/piatto.jpg);
+}
+
+.sotto_desc_piatto {
+    background-color: rgba(165, 42, 42, 0.8);
+    border-right: .25rem solid rgb(75, 2, 2);
+    border-bottom: .25rem solid rgb(75, 2, 2);
+}
+
+.go_piatto {
+    background-color: brown;
+    border-right: .25rem solid rgb(75, 2, 2);
+    border-bottom: .25rem solid rgb(75, 2, 2);
+}
+
+.go_piatto:hover {
+    transform: translateY(.1rem);
+}
+
+.go_piatto:active {
+    border-right: .1rem solid rgb(75, 2, 2);
+    border-bottom: .1rem solid rgb(75, 2, 2);
+    transform: translateY(.3rem);
+}
+
+/*================================================================================================================================*/

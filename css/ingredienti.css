@@ -1,0 +1,61 @@
+
+/*========INGREDIENTI========*/
+
+.bg_body_ingredienti {
+    background-size: 100%;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url(../images/ingredienti.jpg);
+}
+
+.sotto_desc_ingredienti {
+    background-color: rgba(250, 201, 2, 0.8);
+    border-right: .25rem solid rgb(174, 119, 0);
+    border-bottom: .25rem solid rgb(174, 119, 0);
+}
+
+.go_ingredienti {
+    background-color: rgb(250, 201, 2);
+    border-right: .25rem solid rgb(174, 119, 0);
+    border-bottom: .25rem solid rgb(174, 119, 0);
+}
+
+.go_ingredienti:hover {
+    transform: translateY(.1rem);
+}
+
+.go_ingredienti:active {
+    border-right: .1rem solid rgb(174, 119, 0);
+    border-bottom: .1rem solid rgb(174, 119, 0);
+    transform: translateY(.3rem);
+}
+
+#titolo_ingredienti {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#lista_scelte {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.li {
+    background-color: rgba(250, 201, 2, 0.9);
+    border-right: .2rem solid rgb(174, 119, 0);
+    border-bottom: .2rem solid rgb(174, 119, 0);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    text-align: center;
+}
+
+.remove {
+    float: right;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*================================================================================================================================*/

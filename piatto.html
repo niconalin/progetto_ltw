@@ -1,0 +1,78 @@
+<!doctype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTMeaL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link href="css/commons.css" rel="stylesheet">
+    <link href="css/piatto.css" rel="stylesheet">
+</head>
+
+<body class="bg bg_body_piatto">
+
+    <!--====================================================================================================================-->
+
+    <!-- MENU' -->
+    <nav class="navbar menu" id="menu">
+        <a class="navbar-brand marchio">HTMeaL</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="piatto.html">Cerca Per Piatto</a>
+        <a class="nav-link" href="ingredienti.html">Cerca Per Ingredienti</a>
+        <a class="nav-link" href="chi_siamo.html">Chi Siamo</a>
+    </nav>
+
+    <!--====================================================================================================================-->
+
+    <!-- DESCRIZIONE SERVIZIO -->
+    <div class="container text-center" id="descrizione_div">
+        <div class="row">
+            <div class="col sotto_desc sotto_desc_piatto">
+                <h3 id="titolo_descrizione">SCEGLI IL PIATTO DA PREPARARE...</h3>
+                <p>Vuoi cucinare il tuo piatto preferito ma non sai come fare? Scrivi nella barra di ricerca e premi
+                    invio... </p>
+            </div>
+            <div class="col sotto_desc sotto_desc_piatto">
+                <h3 id="titolo_descrizione">...TROVA LA RICETTA...</h3>
+                <p>Hai tutto quello che ti serve per preparare il tuo piatto? Sei pronto a cominciare? </p>
+            </div>
+            <div class="col sotto_desc sotto_desc_piatto">
+                <h3 id="titolo_descrizione">...E DIVERTITI A CUCINARLA!</h3>
+                <p>Sei pronto a stupire i tuoi amici? Allora non ti resta che iniziare!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- ZONA DI RICERCA -->
+    <div class="container">
+        <div class="form-group text-center">
+                <label class="search" for="searchBarPiatto">Cerca:</label>
+                <input type="text" class="form-control searchBar" id="searchBarPiatto" placeholder="Inserisci piatto...">
+                <button id="searchPiatto" class="btn col-3 go go_piatto">VAI!</button>
+        </div>
+    </div>
+
+    <!--====================================================================================================================-->
+
+    <!-- Bootstrap core JavaScript, JQuery and our scripts
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/commons.js"></script>
+    <script type="text/javascript" language="javascript" src="js/piatto.js"></script>
+</body>
+
+</html>
